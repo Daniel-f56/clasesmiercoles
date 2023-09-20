@@ -23,8 +23,61 @@ span{
 .options_group.other_group{
 font-size: 50px;
 }
-
 /* selector por atributo */
 [disabled]{
     background-color: red;
+}
+/* selector por id*/ 
+#title_box{
+    color:blue;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: lowercase;
+    margin-left: 10 px 20px 15px 25px;
+    border: 1px dotted #000000;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    word-spacing: 15px;
+    letter-spacing: 8px;
+    font-size: 50px;
+    box-shadow: 0px 0px 10px 2px #00f;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(214,75,214,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(214,75,214,1);
+     box-shadow: 10px 10px 5px 0px rgba(214,75,214,1);
+}
+
+#box_father{
+    background-color: #000000;
+    width: 50%;
+    height: 200px;
+    background-image: url(https://t2.ea.ltmcdn.com/es/posts/3/7/4/la_tortuga_como_mascota_24473_orig.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*#box_model{
+    background-color: chocolate;
+    width: 50%;
+    height: 50%;
+}*/
+
+/*aplicacion de media queris*/
+@media (min-width: 800px) and (max-width: 1200px){
+    body{
+        background-color: red;
+    }
+    #title_box{
+        text-align: left;
+    }
+}
+
+@media(max-width: 799px){
+    body{
+        background-image: url(https://t2.ea.ltmcdn.com/es/posts/3/7/4/la_tortuga_como_mascota_24473_orig.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat:no-repeat ;
+
+    }
 }
