@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root{
+    --primary: #dd946f;
+    --primary-hover: #dd946f;
+    --secondary: #efd0f8;
+    --secondary-hover: #efd0f8;
+    --aura: #9265ca80;
+    --backround: #261e5a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--backround);
+    font-family: mulish;
+}
+
+h1{
+    color: var(--secondary);
+}
+
+.backround{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-galaxia-realista_23-2148991322.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.5;
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vv;
+}
+
+.my_form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 16px;
+    background-color: var(--backround);
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px var(--aura);
+    min-width: 280px;
+    max-width: 460px;
+    width: 100%;
+    padding: 32px;
+}
+.login{
+height: 80px;
+width: 80px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.login_welcome{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.my_form_button{
+    background-color: var(--backround);
+    color: var(--backround);
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    line-height: 50px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800px;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(0, 0, 0, .15);
+    transition: all .3s ease;
+}
+
